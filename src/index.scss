@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap');
+
+$size--unit: 5px;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', ;
+    font-size: $size--unit*3;
+}
+
+html, body {
+    margin: 0;
+    spacing: 0;
+}
+
+.app {
+
+}
+
+.menu {
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    &__item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    &__item:last-child {
+        margin-top: $size--unit*5;
+    }
+}
+
+
+.peer-list {
+    &__item {
+      display: flex;
+    }
+
+    &__alert {
+      margin-left: $size--unit*2;
+    }
+}
